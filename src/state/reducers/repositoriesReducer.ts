@@ -7,7 +7,7 @@ interface StateInterface {
   error: string;
 }
 
-const reducer = (state: StateInterface, action: Actions) => {
+export const repositoriesReducer = (state: StateInterface, action: Actions) => {
   switch (action.type) {
     case ActionType.SEARCH_REPOSITORIES:
       return { isLoading: true, data: [], error: null };
